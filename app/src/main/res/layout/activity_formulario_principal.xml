@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormularioPrincipal">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:srcCompat="@mipmap/leaf_foreground" />
+
+    <TextView
+        android:id="@+id/txtViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:textColor="@color/main_green"
+        android:text="CREAR NUEVO USUARIO"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txtViewUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Usuario"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="14dp"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="14dp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtViewRepetirUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repetir Usuario"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            />
+        <EditText
+            android:id="@+id/txtRepetirUsuario"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Crear"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/main_green"
+            />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="23dp"
+            />
+    </LinearLayout>
+</LinearLayout>
